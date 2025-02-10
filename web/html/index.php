@@ -1,30 +1,22 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dock It</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Rancho&display=swap">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
-        body { font-family: Lato, sans-serif; }
-        h1, h2, h3, h4, h5, h6 { font-family: Rancho, cursive; }
-        h1 { font-size: 5em; margin-bottom: 0; text-shadow: 0 .2rem .5rem var(--blue); }
-        .bg-black { background-color: #232323; border-bottom: 5px solid var(--blue);}
+<?php
 
-    </style>
-</head>
-<body class="vh-100">
-<div class="d-flex align-items-start flex-column h-100">
-
-    <div class="text-center sticky-top shadow-lg p-2 w-100 text-light bg-black">
-        <h1>Dock It</h1>
-        <a href="phpinfo.php" target="content_frame" class="px-2">PHP Info</a> |
-        <a href="world.php" target="content_frame" class="px-2">The World</a>
-    </div>
-    <iframe src="phpinfo.php" name="content_frame" class="w-100 flex-grow-1 border-0"></iframe>
-</div>
-</body>
-</html>
+$pageTitle = 'Welcome to My Site';
+include "includes/header.php" ;
+?>
+<section>
+    <h2 class="noDisplay">Home Page</h2>
+    <article class="left_article">
+        <h3>Welcome to my Final</h3>
+        <p>For my final project I am making a board game shopping site.  In this site you are able to sort products
+           via the different column titles, add products, edit products, rate products, delete products, and add
+           them to a cart.  In the Orders page you can view customers and sort them just like the products page.
+           If you click on a customer's name you can see their orders they have made.  I also hid a secret in the
+           image on the right.  This class was interesting and different from JavaScript.  I just wish there were
+           more people in the class.</p>
+    </article>
+    <aside class="right_article">
+        <a href="https://chess.org/">
+        <img src="images/boardgame.jpeg" alt="Board game image with a secret" width="400" height="200" class="placeholder"/> </aside>
+        </a>
+</section>
+<?php include "includes/footer.php" ?>
